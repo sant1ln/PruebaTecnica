@@ -1,0 +1,17 @@
+{
+  "name": "platzi_test_system",
+  "version": "1.0.0",
+  "description": "System to make tests",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Santiago Lopera Naranjo",
+  "license": "ISC"
+}
