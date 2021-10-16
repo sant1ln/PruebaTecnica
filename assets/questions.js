@@ -15,73 +15,94 @@ const questions = [
                 correcta: false
             },
             {
-                respuesta: "D) JavaScript",
+                respuesta: "D) C#",
                 correcta: false
             }
         ],
     },
     {
-        statements: "¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?",
+        statements: "¿Como puedo ordenar un Array en JavaScript?",
         answers: [
             {
-                respuesta: "A) Pythons",
-                correcta: false
-            },
-            {
-                respuesta: "B) JavaScript",
+                respuesta: "A) myArray.sort()",
                 correcta: true
             },
             {
-                respuesta: "C) Java",
+                respuesta: "B) myArray.OrdenatePorFavor()",
                 correcta: false
             },
             {
-                respuesta: "D) JavaScript",
+                respuesta: "C) myArray.join()",
+                correcta: false
+            },
+            {
+                respuesta: "D) myArray.split()",
                 correcta: false
             }
         ],
     },
     {
-        statements: "¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?",
+        statements: "¿Como puedo seleccionar un elemento HTML por su id?",
         answers: [
             {
-                respuesta: "A) Python",
-                correcta: false
-            },
-            {
-                respuesta: "B) JavaScript",
+                respuesta: "A) const root = document.getElementById('root')",
                 correcta: true
             },
             {
-                respuesta: "C) Java",
+                respuesta: "B) const root = selectElementInHTML('#root')",
                 correcta: false
             },
             {
-                respuesta: "D) JavaScript",
+                respuesta: "C) const root = document.AddEventListener('#root')",
+                correcta: false
+            },
+            {
+                respuesta: "D) const root = document.querySelector('.root')",
                 correcta: false
             }
         ],
     },
     {
-        statements: "¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?",
+        statements: "¿Con cual de estas herramientas podemos construir un Backend usado JS?",
         answers: [
             {
-                respuesta: "A) Python",
+                respuesta: "A) Django",
                 correcta: false
             },
             {
-                respuesta: "B) JavaScript",
+                respuesta: "B) .Net Framework",
+                correcta: false
+            },
+            {
+                respuesta: "C) Express.js",
                 correcta: true
             },
             {
-                respuesta: "C) Java",
-                correcta: false
-            },
-            {
-                respuesta: "D) JavaScript",
+                respuesta: "D) FastAPI",
                 correcta: false
             }
         ],
     },
+    {
+        statements: "¿Cual es el mejor OS para programar?",
+        answers: [
+            {
+                respuesta: "A) IOS",
+                correcta: false
+            },
+            {
+                respuesta: "B) Windows",
+                correcta: false
+            },
+            {
+                respuesta: "C) Linux",
+                correcta: true
+            },
+            {
+                respuesta: "D) Cualquiera es bueno, todo es cuestion de gustos y necesidades",
+                correcta: false
+            }
+        ],
+    }
 ]
 export default questions
