@@ -1,28 +1,23 @@
-import { acutalQuestion, nextQuestion } from './test.js'
+import questions from "../assets/questions.js";
 
-
-const printQuestion = () => {
-    const answers = acutalQuestion.answers.map(answer => (
+const printQuestion = (acutalQuestion) => {
+    const answers = acutalQuestion.map(answer => (
         `<div class="question" istrue="${answer.correcta}">${answer.respuesta}</div>`
     ))
-    let arrayOfElements = answers.join('');
-    return arrayOfElements
+    return answers.join('');
 }
 
-const createTemplate = () => {
-    return `
-    <p>${acutalQuestion.statements}</p>
-        ${printQuestion()}    
-    `
+const printCard = () => {
+    const listQuestions = questions.map(question => (`
+        <div   class="app_container--question">
+            <p>${question.statement}</p>
+                ${printQuestion(question.answers)}
+        </div>
+        ` ))
+    return listQuestions.join('')
 }
 
-setTimeout(() => {
-    const options = document.querySelectorAll('.question')
 
-    options.forEach(option => {
-        option.addEventListener('click', (e) => nextQuestion(e))
-    })
-}, 200)
+const template = printCard()
 
-
-export default createTemplate;
+export default template;

@@ -1,6 +1,6 @@
 const questions = [
     {
-        statements: "¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?",
+        statement: "¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?",
         answers: [
             {
                 respuesta: "A) Python",
@@ -21,7 +21,7 @@ const questions = [
         ],
     },
     {
-        statements: "¿Como puedo ordenar un Array en JavaScript?",
+        statement: "¿Como puedo ordenar un Array en JavaScript?",
         answers: [
             {
                 respuesta: "A) myArray.sort()",
@@ -42,7 +42,7 @@ const questions = [
         ],
     },
     {
-        statements: "¿Como puedo seleccionar un elemento HTML por su id?",
+        statement: "¿Como puedo seleccionar un elemento HTML por su id?",
         answers: [
             {
                 respuesta: "A) const root = document.getElementById('root')",
@@ -63,7 +63,7 @@ const questions = [
         ],
     },
     {
-        statements: "¿Con cual de estas herramientas podemos construir un Backend usado JS?",
+        statement: "¿Con cual de estas herramientas podemos construir un Backend usado JS?",
         answers: [
             {
                 respuesta: "A) Django",
@@ -84,7 +84,7 @@ const questions = [
         ],
     },
     {
-        statements: "¿Cual es el mejor OS para programar?",
+        statement: "¿Cual es el mejor OS para programar?",
         answers: [
             {
                 respuesta: "A) IOS",

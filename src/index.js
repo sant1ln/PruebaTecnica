@@ -1,4 +1,4 @@
-import createTemplate from './testUI.js';
+import template from './testUI.js';
 
 const root = document.getElementById('root')
-root.innerHTML = createTemplate()
+root.innerHTML = template
