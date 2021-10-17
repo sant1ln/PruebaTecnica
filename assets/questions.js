@@ -1,106 +1,131 @@
 const questions = [
     {
         statement: "¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?",
+        id: "100",
         answers: [
             {
-                respuesta: "A) Python",
-                correcta: false
+                answer: "Python",
+                id: "100-1",
+                correct: false
             },
             {
-                respuesta: "B) JavaScript",
-                correcta: true
+                answer: "JavaScript",
+                id: "100-2",
+                correct: true
             },
             {
-                respuesta: "C) Java",
-                correcta: false
+                answer: "Java",
+                id: "100-3",
+                correct: false
             },
             {
-                respuesta: "D) C#",
-                correcta: false
+                answer: "C#",
+                id: "100-4",
+                correct: false
             }
         ],
     },
     {
         statement: "¿Como puedo ordenar un Array en JavaScript?",
+        id: "101",
         answers: [
             {
-                respuesta: "A) myArray.sort()",
-                correcta: true
+                answer: "myArray.sort()",
+                id: "101-1",
+                correct: true
             },
             {
-                respuesta: "B) myArray.OrdenatePorFavor()",
-                correcta: false
+                answer: "myArray.OrdenatePorFavor()",
+                id: "101-2",
+                correct: false
             },
             {
-                respuesta: "C) myArray.join()",
-                correcta: false
+                answer: "myArray.join()",
+                id: "101-3",
+                correct: false
             },
             {
-                respuesta: "D) myArray.split()",
-                correcta: false
+                answer: "myArray.split()",
+                id: "101-4",
+                correct: false
             }
         ],
     },
     {
         statement: "¿Como puedo seleccionar un elemento HTML por su id?",
+        id: "102",
         answers: [
             {
-                respuesta: "A) const root = document.getElementById('root')",
-                correcta: true
+                answer: "const root = document.getElementById('root')",
+                id: "102-1",
+                correct: true
             },
             {
-                respuesta: "B) const root = selectElementInHTML('#root')",
-                correcta: false
+                answer: "const root = selectElementInHTML('#root')",
+                id: "102-2",
+                correct: false
             },
             {
-                respuesta: "C) const root = document.AddEventListener('#root')",
-                correcta: false
+                answer: "const root = document.AddEventListener('#root')",
+                id: "102-3",
+                correct: false
             },
             {
-                respuesta: "D) const root = document.querySelector('.root')",
-                correcta: false
+                answer: "const root = document.querySelector('.root')",
+                id: "102-4",
+                correct: false
             }
         ],
     },
     {
         statement: "¿Con cual de estas herramientas podemos construir un Backend usado JS?",
+        id: "103",
         answers: [
             {
-                respuesta: "A) Django",
-                correcta: false
+                answer: "Django",
+                id: "103-1",
+                correct: false
             },
             {
-                respuesta: "B) .Net Framework",
-                correcta: false
+                answer: ".Net Framework",
+                id: "103-2",
+                correct: false
             },
             {
-                respuesta: "C) Express.js",
-                correcta: true
+                answer: "Express.js",
+                id: "103-3",
+                correct: true
             },
             {
-                respuesta: "D) FastAPI",
-                correcta: false
+                answer: "FastAPI",
+                id: "103-4",
+                correct: false
             }
         ],
     },
     {
         statement: "¿Cual es el mejor OS para programar?",
+        id: "104",
         answers: [
             {
-                respuesta: "A) IOS",
-                correcta: false
+                answer: "IOS",
+                id: "104-1",
+                correct: false
             },
             {
-                respuesta: "B) Windows",
-                correcta: false
+                answer: "Windows",
+                id: "104-2",
+                correct: false
             },
             {
-                respuesta: "C) Linux",
-                correcta: true
+                answer: "Linux",
+                id: "104-3",
+                correct: true
             },
             {
-                respuesta: "D) Cualquiera es bueno, todo es cuestion de gustos y necesidades",
-                correcta: false
+                answer: "Cualquiera es bueno, todo es cuestion de gustos y necesidades",
+                id: "104-4", 
+                correct: false
             }
         ],
     }

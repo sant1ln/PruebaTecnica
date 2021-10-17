@@ -1,14 +1,22 @@
 import questions from "../assets/questions.js";
 
-let initialIndexValue = 0
-let acutalQuestion = questions[initialIndexValue]
-
-export const nextQuestion = (e) => {
-    initialIndexValue++
-    acutalQuestion = questions[initialIndexValue]
+let correctsAnswers = []
+let wrongsAnswers = []
+let acutalQuestion  = []
+const checkAnswer = (questionId,questionListId ) => {
+    acutalQuestion = questions[questionListId]
+    if(acutalQuestion.answers[questionId].correct){
+        correctsAnswers.push(acutalQuestion)
+    }else{
+        wrongsAnswers.push(acutalQuestion)
+    }
+   console.log(correctsAnswers)
 }
 
-export { acutalQuestion }
+
+
+
+export {checkAnswer}
 
 const template = `
 <p>¿Cual es el principal o bien, el único lenguaje de programación que entienden los navegadores?</p>
