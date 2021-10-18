@@ -7,6 +7,8 @@
     --selected_question_color: #fff;
     --selected_font_question_color: #000;
     --button_color: #1d9bf0;
+    --succesfull_color: #98be4d;
+    --error_color: #e60000;
 }
 
 body{
@@ -102,3 +104,6 @@ body{
     color: var(--font_color);
     cursor: pointer;
 }
+
+
+

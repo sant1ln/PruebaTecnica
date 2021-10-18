@@ -3,18 +3,16 @@ import questions from "../assets/questions.js";
 let correctsAnswers = []
 let wrongsAnswers = []
 let acutalQuestion  = []
-const checkAnswer = (questionId,questionListId ) => {
+
+const checkAnswer = (questionId,questionListId,buttonSelected ) => {
+    buttonSelected.classList.add('selected')
     acutalQuestion = questions[questionListId]
     if(acutalQuestion.answers[questionId].correct){
         correctsAnswers.push(acutalQuestion)
     }else{
         wrongsAnswers.push(acutalQuestion)
     }
-   console.log(correctsAnswers)
 }
-
-
-
 
 export {checkAnswer}
 

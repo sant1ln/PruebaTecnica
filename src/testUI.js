@@ -24,10 +24,11 @@ const printCard = () => {
 setTimeout(()=>{
     const questionsButtons = document.querySelectorAll('.question')
     questionsButtons.forEach(questionButton =>(
-        questionButton .addEventListener('click',()=>{
+        questionButton .addEventListener('click',(e)=>{
           const questionListId =  questionButton.getAttribute('questionList-id')
           const questionId = questionButton.getAttribute('question-id')
-          checkAnswer(questionId,questionListId)
+          const buttonSelected = e.target
+          checkAnswer(questionId,questionListId,buttonSelected)
         })
     ))
 },1)
