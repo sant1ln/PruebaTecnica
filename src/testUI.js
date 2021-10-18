@@ -6,7 +6,7 @@ const lettersChoice = makeVoucabularyLetters()
 
 const printQuestion = (acutalQuestion,questionIdx) => {
     const answers = acutalQuestion.map((answer,index) => (
-        `<div class="question" question-id="${index}" questionList-id="${questionIdx}">${lettersChoice[index]}) ${answer.answer}</div>`
+        `<div class="question" question-id="${index}" questionList-id="${questionIdx}" question-value="${answer.answer}">${lettersChoice[index]}) ${answer.answer}</div>`
     ))
     return answers.join('');
 }
@@ -27,8 +27,9 @@ setTimeout(()=>{
         questionButton .addEventListener('click',(e)=>{
           const questionListId =  questionButton.getAttribute('questionList-id')
           const questionId = questionButton.getAttribute('question-id')
+          const questionValue = questionButton.getAttribute('question-value')
           const buttonSelected = e.target
-          checkAnswer(questionId,questionListId,buttonSelected)
+          checkAnswer(questionId,questionListId,buttonSelected, questionValue)
         })
     ))
 },1)
